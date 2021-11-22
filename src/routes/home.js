@@ -1,26 +1,13 @@
 import React from "react";
-import { useEffect } from "react";
 import "../App.css";
 import Header from "../components/header";
 import "../App.css";
 import Footer from "../components/footer";
 
+
 function Home() {
-  useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 10 ||
-        document.documentElement.scrollTop > 10
-      ) {
-        document.getElementById("header").style.backgroundColor = "black";
-      } else {
-        document.getElementById("header").style.backgroundColor = "transparent";
-      }
-    }
-  }, []);
+
+
   return (
     <>
       <style
@@ -856,7 +843,7 @@ function Home() {
             " .info-content h2 { line-height: 40px !important; } .widget .widget-logo, .widget .widget-title { margin-bottom: 15px; } @media only screen and (max-width: 991px){ .widget_contact_info{ padding-top: 250px !important; } }",
         }}
       />
-<Footer/>
+      <Footer />
       {/* KLAVIYO SIGN UP FORM SCRIPT */}
       {/* KLAVIYO SIGN UP FORM SCRIPT */}
       {/* TrustBox script */}

@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+export const scrollFunction = () => {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    document.getElementById("header").style.backgroundColor = "black";
+  } else {
+    document.getElementById("header").style.backgroundColor = "transparent";
+  }
+};
 function Header() {
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }, []);
   return (
     <header id="header" className="header fixed-top">
       <nav className="navbar navbar-expand-lg navbar-dark mnav">
@@ -28,9 +40,9 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -48,14 +60,15 @@ function Header() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a class="dropdown-item" href="#">
-                Photography
+                  Photography
                 </a>
                 <a class="dropdown-item" href="#">
                   Listing Image
                 </a>
                 <a class="dropdown-item" href="#">
                   Listing Contact
-                </a> <a class="dropdown-item" href="#">
+                </a>{" "}
+                <a class="dropdown-item" href="#">
                   3D Render Image
                 </a>
               </div>
@@ -69,7 +82,9 @@ function Header() {
               </a>
             </li> */}
             <li className="nav-item">
-              <Link to='/about' className="nav-link">About us</Link>
+              <Link to="/about" className="nav-link">
+                About us
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link">Contact us</a>
