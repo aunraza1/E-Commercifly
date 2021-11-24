@@ -3,11 +3,10 @@ import "../App.css";
 import Header from "../components/header";
 import "../App.css";
 import Footer from "../components/footer";
-
-
+import FloatingWhatsApp from 'react-floating-whatsapp'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 function Home() {
-
-
   return (
     <>
       <style
@@ -836,6 +835,23 @@ function Home() {
             </div>
           </div>
         </div>
+
+        {/* <FontAwesomeIcon
+          style={{
+            position: "fixed",
+            bottom: 20,
+            right: 0,
+            height: 90,
+            width: 200,
+          }}
+          color="#4FCE5D"
+          icon={faWhatsapp}
+        /> */}
+        <FloatingWhatsApp
+          className="whatsApp-div"
+          accountName="E-Commercifly"
+          phoneNumber="+923232970705"
+        />
       </div>
       <style
         dangerouslySetInnerHTML={{
@@ -843,7 +859,9 @@ function Home() {
             " .info-content h2 { line-height: 40px !important; } .widget .widget-logo, .widget .widget-title { margin-bottom: 15px; } @media only screen and (max-width: 991px){ .widget_contact_info{ padding-top: 250px !important; } }",
         }}
       />
+
       <Footer />
+
       {/* KLAVIYO SIGN UP FORM SCRIPT */}
       {/* KLAVIYO SIGN UP FORM SCRIPT */}
       {/* TrustBox script */}
