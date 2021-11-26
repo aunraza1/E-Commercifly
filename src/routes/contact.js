@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Header from "../components/header";
 function Contact() {
+  const [alertInfo, setAlertInfo] = useState({
+    showAlert: false,
+    alertTxt: "",
+  });
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -13,14 +17,28 @@ function Contact() {
       )
       .then(
         function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-          alert(response.text);
+          setAlertInfo({
+            ...alertInfo,
+            showAlert: true,
+            alertTxt: response.text,
+          });
           e.target.reset();
+          setTimeout(() => {
+            setAlertInfo({ ...alertInfo, showAlert: false });
+          }, 3000);
         },
         function (error) {
           console.log("FAILED...", error);
         }
       );
+  };
+
+  const AlertWindow = () => {
+    return (
+      <div class="alert alert-success col-md-3">
+        <strong>Success!</strong> {alertInfo.alertTxt}
+      </div>
+    );
   };
   return (
     <>
@@ -112,6 +130,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      {alertInfo.showAlert && <AlertWindow />}
     </>
   );
 }
