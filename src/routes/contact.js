@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Header from "../components/header";
+import FloatingWhatsApp from "react-floating-whatsapp";
 function Contact() {
   const [alertInfo, setAlertInfo] = useState({
     showAlert: false,
@@ -51,6 +52,7 @@ function Contact() {
       <Header contact="dontScroll" />
       <div className="row justify-content-center align-items-center marginFromTop">
         <div className="col-md-6 order-md-12">
+          <h2 style={{ textAlign: "center" }}>Contact Us</h2>
           <form id="contactform" onSubmit={sendEmail}>
             <input type="hidden" name="_token" />
             <div className="card p-4">
@@ -129,6 +131,11 @@ function Contact() {
             </div>
           </form>
         </div>
+        <FloatingWhatsApp
+          className="whatsApp-div"
+          accountName="E-Commercifly"
+          phoneNumber="+923232970705"
+        />
       </div>
       {alertInfo.showAlert && <AlertWindow />}
     </>

@@ -50,7 +50,7 @@ function Footer() {
 
                     <ul className="menu">
                       <li>
-                        <Link to="https://www.amzonestep.com/podcast">Podcast</Link>
+                        <Link to="/">Podcast</Link>
                       </li>
                       <li>
                         <Link to="https://www.amzonestep.com/affiliate-program">
@@ -194,7 +194,7 @@ function Footer() {
                     </Link>
                     <br />
                     <Link
-                      to="//www.dmca.com/Protection/Status.aspx?ID=665b052f-83ae-4f7f-ad59-46bbc41b3b91"
+                      to="/www.dmca.com/Protection/Status.aspx?ID=665b052f-83ae-4f7f-ad59-46bbc41b3b91"
                       title="DMCA.com Protection Status"
                       className="dmca-badge"
                     >

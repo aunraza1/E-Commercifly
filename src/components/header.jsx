@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/logo.png";
+
 export const scrollFunction = () => {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("header").style.backgroundColor = "black";
@@ -23,7 +25,8 @@ function Header({ contact }) {
       >
         <Link to="/" className="navbar-brand ml-3" href="/">
           <img
-            src="https://www.amzonestep.com/images/logo.png"
+            src={Logo}
+            style={{ height: 70, width: 70 }}
             className="logoResize"
             alt="logo"
           />
@@ -49,7 +52,8 @@ function Header({ contact }) {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link to=""
+              <Link
+                to=""
                 className="nav-link dropdown-toggle"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -62,16 +66,16 @@ function Header({ contact }) {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <Link to="/" className="dropdown-item" href="#">
+                <Link to="/photography" className="dropdown-item">
                   Photography
                 </Link>
-                <Link to="/" className="dropdown-item" href="#">
+                <Link to="/" className="dropdown-item">
                   Listing Image
                 </Link>
-                <Link to="/" className="dropdown-item" href="#">
+                <Link to="/" className="dropdown-item">
                   Listing Contact
                 </Link>{" "}
-                <Link to="/" className="dropdown-item" href="#">
+                <Link to="/" className="dropdown-item">
                   3D Render Image
                 </Link>
               </div>
@@ -87,7 +91,9 @@ function Header({ contact }) {
               </Link>
             </li>
             <li style={{ padding: "10px 15px" }}>
-              <Link to="/" className="freeListingBtn">Wordspy</Link>
+              <Link to="/" className="freeListingBtn">
+                Wordspy
+              </Link>
             </li>
             <li style={{ padding: "10px 15px" }}>
               <Link to="/" className="freeListingBtn" target="_blank">

@@ -154,7 +154,7 @@ function Home() {
                         "url(https://www.amzonestep.com/new/images/css_sprites.png) -10px -10px",
                     }}
                   />
-                  <h4>Listing Optimization</h4>
+                  <h4>Listing Image</h4>
                 </div>
                 {/* Icon End */}
                 {/* Content Begin */}
@@ -189,7 +189,7 @@ function Home() {
                         "url(https://www.amzonestep.com/new/images/css_sprites.png) -10px -280px",
                     }}
                   />
-                  <h4>Pay-per-click Management</h4>
+                  <h4>Listing Contact</h4>
                   {/* Icon End */}
                 </div>
                 <div className="content">
@@ -208,10 +208,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6">
-              {/* Single Service Begin */}
+            {/* <div className="col-lg-4 col-sm-6">
+            
               <div className="single-service style--two">
-                {/* Icon Begin */}
+             
                 <div style={{ display: "flex" }}>
                   <span
                     style={{
@@ -222,7 +222,7 @@ function Home() {
                     }}
                   />
                   <h4>Enhanced Brand Content</h4>
-                  {/* Icon End */}
+                
                 </div>
                 <div className="content">
                   <p>
@@ -240,9 +240,9 @@ function Home() {
               </div>
             </div>
             <div className="col-lg-4 col-sm-6">
-              {/* Single Service Begin */}
+          
               <div className="single-service style--two">
-                {/* Icon Begin */}
+              
                 <div style={{ display: "flex" }}>
                   <span
                     style={{
@@ -267,9 +267,9 @@ function Home() {
                     Read More
                   </a>
                 </div>
-                {/* Content End */}
+            
               </div>
-              {/* Single Service End */}
+            
             </div>
             <div className="col-lg-4 col-sm-6">
               <div className="single-service style--two">
@@ -356,7 +356,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-4 col-sm-6">
               <div className="single-service style--two">
                 <div style={{ display: "flex" }}>
@@ -369,7 +369,7 @@ function Home() {
                       backgroundRepeat: "round",
                     }}
                   />
-                  <h4>Amazon Ranking</h4>
+                  <h4>3D Rendering</h4>
                 </div>
                 <div className="content">
                   <p>
@@ -465,7 +465,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <div id="wordspy" />
+      {/* <div id="wordspy" />
       <div className="wordspy-bg">
         <div className="container">
           <div className="row">
@@ -491,8 +491,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <section id="listing-optimzation">
+      </div> */}
+      {/* <section id="listing-optimzation">
         <div className="listing-form" style={{ padding: "5%" }}>
           <div className="row">
             <div className="col-md-6 my-auto">
@@ -605,7 +605,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <div>
         <div className="container">
           <div className="section-title text-center">
@@ -728,7 +728,8 @@ function Home() {
             className="col-md-6 py-4"
             id="meetUpBgImg"
             style={{
-              backgroundImage: "url(/new/images/home/amz-meeting.png)",
+              backgroundImage:
+                "url(https://www.amzonestep.com/new/images/home/amz-meeting.png)",
               backgroundSize: "cover",
             }}
           >

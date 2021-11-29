@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Header from "../components/header";
 import Footer from "../components/footer";
-
-
+import test1 from '../assets/images/test.jpg'
+import Aun from "../assets/images/aun.jpg";
+import Bus from '../assets/images/bus.jpg';
+import FloatingWhatsApp from "react-floating-whatsapp";
 function About() {
- 
+
   return (
     <div>
       <style
@@ -22,10 +24,7 @@ function About() {
       />
 
       <Header />
-      <link
-        rel="stylesheet"
-        href="https://www.amzonestep.com/new/css/custom.css"
-      />
+
       <style
         dangerouslySetInnerHTML={{
           __html:
@@ -47,35 +46,26 @@ function About() {
       </section>
       <div className="container section-title my-5">
         <h3 style={{ color: "#f5812a" }} className="mb-3">
-          AMZ ONE STEP
+          ECOMMERCIFLY
         </h3>
         <h1 className="about-section-heading">
-          We Incorporate The Finest
-          <br /> To Attain Excellence
+          Lorem ipsum dolor sit amet
+          <br /> consectetur adipiscing elit
         </h1>
         <div className="row py-4">
           <div className="col-md-6">
             <p className="mt-0" style={{ fontSize: "1rem" }}>
-              AMZ One Step has been in the online service since 2017 with a
-              group of experienced e-commerce experts having an astute
-              understanding of the online business framework’s dependence on
-              quality-driven listing creation and optimization. Product
-              photography is considered its prime real estate and is given the
-              utmost priority by our team of experts. Enhanced images can
-              increase the click conversion and translate into accelerated
-              sales. In a highly competitive market like Amazon, product
-              visibility determines the market share and if your listing is not
-              enticing to the customer, it will not be able to compete. Keeping
-              all this in mind, we hold ourselves to a high standard and are
-              committed to delivering on our mission.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
           <div className="col-md-6">
-            <img
-              src="https://www.amzonestep.com/new/images/about.png"
-              alt=""
-              style={{ minHeight: "100%" }}
-            />
+            <img src={Bus} alt="" style={{ minHeight: "100%" }} />
           </div>
         </div>
       </div>
@@ -92,11 +82,8 @@ function About() {
                   src="https://www.amzonestep.com/new/images/about-commit.png"
                   style={{ height: "100px", marginBottom: "10px" }}
                 />
-                <h3>We Commit</h3>
-                <p>
-                  Our team of specialists is committed to producing the best
-                  results in order to make your product a success.
-                </p>
+                <h3>Aun Raza</h3>
+                <p>This is a test text please ensure things are right</p>
               </div>
             </div>
             {/* Single Service End */}
@@ -112,11 +99,8 @@ function About() {
                   src="https://www.amzonestep.com/new/images/about-research.png"
                   style={{ height: "100px", marginBottom: "10px" }}
                 />
-                <h3>We Research</h3>
-                <p>
-                  Our experts know how important market research is! No work is
-                  done without extensive research of market trends.
-                </p>
+                <h3>Software Engineer</h3>
+                <p>This is a test text please ensure things are right</p>
               </div>
             </div>
             {/* Single Service End */}
@@ -132,11 +116,8 @@ function About() {
                   src="https://www.amzonestep.com/new/images/about-delivery.png"
                   style={{ height: "100px", marginBottom: "10px" }}
                 />
-                <h3>We Deliver</h3>
-                <p>
-                  The quality of our work and your time are both of tremendous
-                  importance to us. We deliver the best results promptly!
-                </p>
+                <h3>Hybird App developer</h3>
+                <p>This is a test text please ensure things are right</p>
               </div>
             </div>
             {/* Single Service End */}
@@ -160,23 +141,23 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Kamal1.jpeg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Kamaljit Singh</h3>
+                    <h3 className="profile-name">Aun Raza</h3>
                     <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Kamal1.jpeg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Kamaljit Singh</h3>
+                    <h3 className="profile-name">Aun Raza</h3>
                     <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
@@ -188,24 +169,24 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Saddam.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Saddam Hasan</h3>
-                    <h4 className="profile-title">Founder &amp; COO</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Saddam.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Saddam Hasan</h3>
-                    <h4 className="profile-title">Founder &amp; COO</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
               </div>
@@ -218,24 +199,24 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Curtis.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Curtis Schick</h3>
-                    <h4 className="profile-title">Customer Success Manager</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Curtis.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Curtis Schick</h3>
-                    <h4 className="profile-title">Customer Success Manager</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
               </div>
@@ -246,24 +227,24 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Dave.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Dave Zmyndak</h3>
-                    <h4 className="profile-title">Customer Success Manager</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Dave.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Dave Zmyndak</h3>
-                    <h4 className="profile-title">Customer Success Manager</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
               </div>
@@ -274,24 +255,24 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Nalon.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Nolan Koziol</h3>
-                    <h4 className="profile-title">Amazon SEO Specialist</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Nalon.jpg"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Nolan Koziol</h3>
-                    <h4 className="profile-title">Amazon SEO Specialist</h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
               </div>
@@ -302,34 +283,30 @@ function About() {
                   <div className="front">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Shyanne.png"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Shyanne MacDonald</h3>
-                    <h4 className="profile-title">
-                      Image Optimization Specialist
-                    </h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                   <div className="back">
                     <img
                       className="profile-picture"
-                      src="https://www.amzonestep.com/new/images/amzteam/Shyanne.png"
+                      src={test1}
                       width="300px"
                       height="300px"
                     />
                     <div className="profile-devider" />
-                    <h3 className="profile-name">Shyanne MacDonald</h3>
-                    <h4 className="profile-title">
-                      Image Optimization Specialist
-                    </h4>
+                    <h3 className="profile-name">Aun Raza</h3>
+                    <h4 className="profile-title">CEO &amp; Founder</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
+          {/* <div className="row justify-content-center">
             <div className="col-lg-3 mb-5">
               <div className="flip-container">
                 <div className="flipper">
@@ -446,8 +423,9 @@ function About() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row justify-content-center">
+          </div> */}
+
+          {/* <div className="row justify-content-center">
             <div className="col-lg-3 mb-5">
               <div className="flip-container">
                 <div className="flipper">
@@ -512,7 +490,7 @@ function About() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <style
@@ -531,12 +509,17 @@ function About() {
                 style={{ fontSize: "40px", marginBottom: "15px" }}
               />
               <p style={{ fontSize: "20px" }}>
-                To enable sellers to achieve the ideal product placement and
-                help their brand earn the{" "}
-                <strong>“Best Seller” or “Amazon Choice”</strong> tag, enhancing
-                the listing’s content and enabling the product realize its
-                potential. To aid those sellers who are trying to enter the
-                market by dominating the competition.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum
+                <strong>“Test” Zain Orbit”</strong> Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris
               </p>
               <hr
                 style={{
@@ -546,14 +529,11 @@ function About() {
                   borderColor: "#00b4a7",
                 }}
               />
-              <h1> Kamaljit Singh </h1>
+              <h1> Aun Raza </h1>
               <h3 style={{ color: "#818181" }}> Founder </h3>
             </div>
             <div className="col-md-4">
-              <img
-                src="https://www.amzonestep.com/new/images/Kamaljit-singh.png"
-                className="w-100"
-              />
+              <img src={Aun} className="w-100" />
             </div>
           </div>
         </div>
@@ -563,6 +543,11 @@ function About() {
           __html:
             " .info-content h2 { line-height: 40px !important; } .widget .widget-logo, .widget .widget-title { margin-bottom: 15px; } @media only screen and (max-width: 991px){ .widget_contact_info{ padding-top: 250px !important; } }",
         }}
+      />
+      <FloatingWhatsApp
+        className="whatsApp-div"
+        accountName="E-Commercifly"
+        phoneNumber="+923232970705"
       />
       <Footer />
     </div>
