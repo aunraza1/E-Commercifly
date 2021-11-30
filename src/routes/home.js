@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import Header from "../components/header";
 import "../App.css";
 import Footer from "../components/footer";
-import FloatingWhatsApp from 'react-floating-whatsapp'
+// import { useNavigate } from "react-router-dom";
+import WhatsApp from "../components/whatsapp";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 function Home() {
+  // const navigate = useNavigate();
+  const [readMore, setReadMore] = useState({
+    photography: false,
+    listingImage: false,
+    listingContact: false,
+    DRendering: false,
+  });
   return (
     <>
       <style
@@ -21,8 +29,6 @@ function Home() {
             " /*.ml-auto, .mx-auto {*/ /* margin-left: auto!important;*/ /* background-color: #212529 !important;*/ /* padding: 0px 0px 0px 10px !important;*/ /*}*/ @media only screen and (min-width: 260px) { .navbar-dark .navbar-nav .nav-link { color: rgb(255, 255, 255) !important; padding: 26px 18px !important; line-height: 0px !important; } } @media only screen and (max-width: 990px) { .navbar-nav { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding-left: 0; margin-bottom: 0; list-style: none; background: #1b252f !important; } } @media (min-width: 1099px) { .navbar-expand-lg .navbar-collapse { display: flex; padding-top: 14px !important; flex-basis: auto; } } .freeListingBtn{ background-color: #fd7e14; border: none; color: white !important; padding: 10px 22px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; margin: -5px; transition-duration: 0.4s; font-weight: bold; } .freeListingBtn:hover { box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%); color: white !important; }",
         }}
       />
-      {/*For Sticky Header*/}
-      {/*For Sticky Header*/}
       <Header />
       <style
         dangerouslySetInnerHTML={{
@@ -130,13 +136,22 @@ function Home() {
                     Get your product photos better than your competitors!
                     Product photography is a single most important factor that
                     helps grow your product to highs.
+                    {readMore.photography === true
+                      ? "This is a testing platform only all fields written here are at production level only!"
+                      : ""}
                   </p>
-                  <a
-                    href="https://www.amzonestep.com/services/amazon-product-photography"
+                  <p
+                    onClick={() =>
+                      setReadMore({
+                        ...readMore,
+                        photography:
+                          readMore.photography === false ? true : false,
+                      })
+                    }
                     className="btn-inline readmore-orange"
                   >
-                    Read More
-                  </a>
+                    {readMore.photography === true ? "Read Less" : "Read More"}
+                  </p>
                 </div>
                 {/* Single ServiceEnd */}
               </div>
@@ -160,17 +175,26 @@ function Home() {
                 {/* Content Begin */}
                 <div className="content">
                   <p>
-                    Words that speak louder! Keyword rich content writing that
-                    makes your listing standout. Let Amazon algorithm rank your
-                    listing fast and make it visible to maximum number of
-                    visitors.
+                    We don't just take photos we bring your products to life.
+                    Get your product photos better than your competitors!
+                    Product photography is a single most important factor that
+                    helps grow your product to highs.
+                    {readMore.listingImage === true
+                      ? "This is a testing platform only all fields written here are at production level only!"
+                      : ""}
                   </p>
-                  <a
-                    href="https://www.amzonestep.com/services/amazon-listing-optimization"
+                  <p
+                    onClick={() =>
+                      setReadMore({
+                        ...readMore,
+                        listingImage:
+                          readMore.listingImage === false ? true : false,
+                      })
+                    }
                     className="btn-inline readmore-orange"
                   >
-                    Read More
-                  </a>
+                    {readMore.listingImage === true ? "Read Less" : "Read More"}
+                  </p>
                 </div>
                 {/* Content End */}
               </div>
@@ -194,17 +218,28 @@ function Home() {
                 </div>
                 <div className="content">
                   <p>
-                    We’re the industry’s prime PPC management agency, providing
-                    sellers with top-notch PPC services that is made to reach a
-                    wide spectrum of customers and enhance sales to a greater
-                    extend.
+                    We don't just take photos we bring your products to life.
+                    Get your product photos better than your competitors!
+                    Product photography is a single most important factor that
+                    helps grow your product to highs.
+                    {readMore.listingContact === true
+                      ? "This is a testing platform only all fields written here are at production level only!"
+                      : ""}
                   </p>
-                  <a
-                    href="https://www.amzonestep.com/services/amazon-ppc-service"
+                  <p
+                    onClick={() =>
+                      setReadMore({
+                        ...readMore,
+                        listingContact:
+                          readMore.listingContact === false ? true : false,
+                      })
+                    }
                     className="btn-inline readmore-orange"
                   >
-                    Read More
-                  </a>
+                    {readMore.listingContact === true
+                      ? "Read Less"
+                      : "Read More"}
+                  </p>
                 </div>
               </div>
             </div>
@@ -373,17 +408,26 @@ function Home() {
                 </div>
                 <div className="content">
                   <p>
-                    An advanced Tri-Ranking Solution that leverages PPC
-                    Campaigns along with Ranking strategies, to get the products
-                    in the top spots and help you expands your brand
-                    exponentially.
+                    We don't just take photos we bring your products to life.
+                    Get your product photos better than your competitors!
+                    Product photography is a single most important factor that
+                    helps grow your product to highs.
+                    {readMore.DRendering === true
+                      ? "This is a testing platform only all fields written here are at production level only!"
+                      : ""}
                   </p>
-                  <a
-                    href="https://www.amzonestep.com/services/amazon-product-ranking"
+                  <p
+                    onClick={() =>
+                      setReadMore({
+                        ...readMore,
+                        DRendering:
+                          readMore.DRendering === false ? true : false,
+                      })
+                    }
                     className="btn-inline readmore-orange"
                   >
-                    Read More
-                  </a>
+                    {readMore.DRendering === true ? "Read Less" : "Read More"}
+                  </p>
                 </div>
               </div>
             </div>
@@ -741,6 +785,7 @@ function Home() {
             <div className="row py-2">
               <div className="col-md-6 text-center">
                 <a
+                  href="/"
                   className=" btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -752,6 +797,7 @@ function Home() {
               </div>
               <div className="col-md-6 text-center">
                 <a
+                  href="/"
                   className=" btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -765,6 +811,7 @@ function Home() {
             <div className="row py-2">
               <div className="col-md-6 text-center">
                 <a
+                  href="/"
                   className=" btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -776,6 +823,7 @@ function Home() {
               </div>
               <div className="col-md-6 text-center">
                 <a
+                  href="/"
                   className=" btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -789,6 +837,8 @@ function Home() {
             <div className="row py-2">
               <div className="col-md-6 text-center">
                 <a
+                  href="/
+                "
                   className=" btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -800,6 +850,7 @@ function Home() {
               </div>
               <div className="col-md-6 text-center">
                 <a
+                  href="/"
                   className="btn btn-green hover-shadow respMeetBtn"
                   style={{
                     background:
@@ -828,7 +879,6 @@ function Home() {
             <div className="text-center">
               <a
                 href="https://www.facebook.com/groups/1885088548483880/"
-                target="_blank"
                 className="btn btn-orange hover-shadow"
               >
                 JOIN NOW
@@ -848,11 +898,7 @@ function Home() {
           color="#4FCE5D"
           icon={faWhatsapp}
         /> */}
-        <FloatingWhatsApp
-          className="whatsApp-div"
-          accountName="E-Commercifly"
-          phoneNumber="+923232970705"
-        />
+        <WhatsApp />
       </div>
       <style
         dangerouslySetInnerHTML={{

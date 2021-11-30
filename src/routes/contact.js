@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Header from "../components/header";
-import FloatingWhatsApp from "react-floating-whatsapp";
+import WhatsApp from "../components/whatsapp";
 function Contact() {
   const [alertInfo, setAlertInfo] = useState({
     showAlert: false,
@@ -131,11 +131,7 @@ function Contact() {
             </div>
           </form>
         </div>
-        <FloatingWhatsApp
-          className="whatsApp-div"
-          accountName="E-Commercifly"
-          phoneNumber="+923232970705"
-        />
+      <WhatsApp/>
       </div>
       {alertInfo.showAlert && <AlertWindow />}
     </>

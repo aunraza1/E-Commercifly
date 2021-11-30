@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Header from "../components/header";
 import Footer from "../components/footer";
-import test1 from '../assets/images/test.jpg'
+import test1 from "../assets/images/test.jpg";
 import Aun from "../assets/images/aun.jpg";
-import Bus from '../assets/images/bus.jpg';
-import FloatingWhatsApp from "react-floating-whatsapp";
+import Bus from "../assets/images/bus.jpg";
+import WhatsApp from "../components/whatsapp";
 function About() {
-
   return (
     <div>
       <style
@@ -544,11 +543,7 @@ function About() {
             " .info-content h2 { line-height: 40px !important; } .widget .widget-logo, .widget .widget-title { margin-bottom: 15px; } @media only screen and (max-width: 991px){ .widget_contact_info{ padding-top: 250px !important; } }",
         }}
       />
-      <FloatingWhatsApp
-        className="whatsApp-div"
-        accountName="E-Commercifly"
-        phoneNumber="+923232970705"
-      />
+      <WhatsApp />
       <Footer />
     </div>
   );

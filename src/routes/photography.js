@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import WhatsApp from "../components/whatsapp";
 function Photography() {
   return (
     <div>
@@ -40,8 +41,7 @@ function Photography() {
               <a
                 href="#productphotography"
                 style={{ color: "black", textDecoration: "none" }}
-                onmouseover="this.style.color='orange'"
-                onmouseout="this.style.color='black'"
+              
               >
                 <h5 className="mt-4">Product Photography </h5>
               </a>
@@ -297,6 +297,7 @@ function Photography() {
           </div>
         </div>
       </section>
+      <WhatsApp/>
       <Footer/>
     </div>
   );
