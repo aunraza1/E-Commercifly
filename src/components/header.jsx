@@ -26,7 +26,7 @@ function Header({ contact }) {
         <Link to="/" className="navbar-brand ml-3" href="/">
           <img
             src={Logo}
-            style={{ height: 70, width: 70 }}
+            style={{ height: 100, width: 100,objectFit: 'contain' }}
             className="logoResize"
             alt="logo"
           />
