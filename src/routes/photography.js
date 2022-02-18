@@ -118,7 +118,59 @@ function Photography() {
                 <h5 className="mt-4">Product Photography </h5>
               </a>
             </div>
-
+            {/* <div className="col-md-3 d-flex py-4 px-3">
+              <span
+                style={{
+                  width: "70px",
+                  height: "70px",
+                  background:
+                    "url(//www.amzonestep.com/new/images/css_sprites.png) -1px -100px",
+                }}
+              />
+              <a
+                href="#ebc"
+                style={{ color: "black", textDecoration: "none" }}
+                onmouseover="this.style.color='orange'"
+                onmouseout="this.style.color='black'"
+              >
+                <h5 className="mt-4">Enhanced Brand Content </h5>
+              </a>
+            </div> */}
+            {/* <div className="col-md-3 d-flex py-4 px-3">
+              <span style={{ width: "70px", height: "70px" }}>
+                <img
+                  src="https://www.amzonestep.com/new/images/packaging-design.jpg"
+                  className="img-responsive"
+                  alt="Test"
+                />
+              </span>
+              <a
+                href="#packagingdesign"
+                style={{ color: "black", textDecoration: "none" }}
+                onmouseover="this.style.color='orange'"
+                onmouseout="this.style.color='black'"
+              >
+                <h5 className="mt-4">Packaging Design </h5>
+              </a>
+            </div> */}
+            {/* <div className="col-md-3 d-flex py-4 px-3">
+              <span
+                style={{
+                  width: "70px",
+                  height: "70px",
+                  background:
+                    "url(https://amzonestep.com/new/images/css_sprites.png) -10px -10px",
+                }}
+              />
+              <a
+                href="#listingoptimization"
+                style={{ color: "black", textDecoration: "none" }}
+                onmouseover="this.style.color='orange'"
+                onmouseout="this.style.color='black'"
+              >
+                <h5 className="mt-4">Listing Optimization</h5>
+              </a>
+            </div> */}
           </div>
         </div>
       </section>

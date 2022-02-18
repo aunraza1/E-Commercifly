@@ -15649,9 +15649,10 @@ blockquote {
 
 .widget ul:not(.social_icon_list) li a:before {
 	font-family: FontAwesome;
-	content: "ïƒš";
+	content: "➤";
 	margin-right: 10px;
 	font-display: swap;
+	color: #000;
 }
 
 .widget>ul {
